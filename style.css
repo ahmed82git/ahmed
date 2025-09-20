@@ -1,3 +1,146 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: "Work";
+}
+:root {
+  --premary-color: rgb(0, 195, 165);
+  --second-color: rgb(197, 197, 197);
+  --third-color: rgb(81, 81, 81);
+  --premary-font-size: 35px;
+}
+html {
+  font-size: 16px;
+}
+@font-face {
+  font-family: "Work";
+  src: url(asset/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Work_it";
+  src: url(asset/Work_Sans/WorkSans-Italic-VariableFont_wght.ttf);
+}
 h1 {
-    color: green;
+  font-weight: 600;
+  color: var(--premary-color);
+}
+h2 {
+  font-weight: 500;
+}
+h3 {
+  font-weight: 400;
+  font-size: 1.1em;
+}
+.ico-nav {
+  height: 35px;
+}
+.nav-title {
+  display: flex;
+  gap: 7px;
+}
+span {
+  color: var(--second-color);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  height: 100px;
+}
+.nav-l {
+  display: flex;
+  gap: 10px;
+}
+nav ul li:first-child {
+  color: var(--premary-color);
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.first-title-main h1 {    
+ font-weight: 400;
+ margin-bottom: 5px;
+}
+
+.first-title-main {  
+  flex-direction: column;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.first-title-main img {
+    margin-bottom: 50px;
+    margin-top: 100px;
+    width: 40px;
+  
+}
+.welcome {
+  margin-top: 80px;
+  display: flex;  
+  color: var(--third-color);
+  font-size: 1.1em;
+    line-height: 30px;
+    margin-bottom: 100px;
+    
+    font-weight: 390;
+   
+}
+.welcome p{
+  width: 50%;
+}
+.welcome p a {
+  color: blue;
+}
+.welcome p a:hover {
+  text-decoration-line: underline;
+}
+
+i {
+  font-size: 1.1em;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+   justify-content: space-between;
+  gap: 10px;
+    color: rgb(0, 0, 0);
+ 
+}
+.cards div{
+  display: flex;
+  flex-direction: column;  
+  width: 350px;
+  height: 400px;
+  border-radius: 10px;
+  background-color: var(--premary-color);
+  padding: 20px; 
+}
+.cards div i{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.cards div h2{
+  padding-bottom:15px ;
+
 }
